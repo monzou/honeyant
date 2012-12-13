@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="honeyant-example" basedir=".">
+
+	<path id="classpath">
+		<pathelement location="bin" />
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef name="dump" classname="monzou.honeyant.example.task.DumpTask" classpathref="classpath" />
+	
+	<target name="honeyant" description="HoneyAnt incremental build task example">
+		<echo message="HoneyAnt incremental build: ${clazz} (${path})" />
+		<dump fqn="${clazz}" path="${path}" />
+		<antcall target="refresh">
+			<param name="dir" value="." />
+		</antcall>
+	</target>
+
+	<target name="refresh" if="${eclipse.running}">
+		<eclipse.refreshLocal resource="${dir}" />
+	</target>
+	
+</project>

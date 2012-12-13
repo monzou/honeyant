@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="monzou.honeyant.nature"
+         name="HoneyAnt Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run class="monzou.honeyant.HoneyAntNature" />
+      </runtime>
+      <requires-nature id="org.eclipse.jdt.core.javanature" />
+   </extension>
+   <extension
+         id="monzou.honeyant.preferences.propertyPage"
+         name="HoneyAnt Property Page"
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="monzou.honeyant.preferences.view.HoneyAntPropertyPage"
+            id="monzou.honeyant.preferences.view.propertyPage"
+            name="HoneyAnt">
+	    <enabledWhen>
+	      <instanceof value="org.eclipse.jdt.core.IJavaProject" />
+	    </enabledWhen>
+      </page>
+   </extension>
+   <extension
+         id="monzou.honeyant.builder"
+         name="HoneyAnt Runner"
+         point="org.eclipse.core.resources.builders">
+      <builder>
+         <run class="monzou.honeyant.HoneyAntRunner" />
+      </builder>
+   </extension>
+
+</plugin>

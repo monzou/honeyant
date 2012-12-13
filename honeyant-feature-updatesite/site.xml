@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="HoneyAnt Eclipse Plugin Updatesite" url="https://github.com/monzou/honeyant/honeyant-feature-updatesite">
+      The updatesite of HoneyAnt Eclipse Plugin.
+   </description>
+   <feature url="features/monzou.honeyant.feature_1.0.0.201212131614.jar" id="monzou.honeyant.feature" version="1.0.0.201212131614">
+      <category name="honeyant"/>
+   </feature>
+   <category-def name="honeyant" label="HoneyAnt">
+      <description>
+         HoneyAnt Eclipse Plugin.
+      </description>
+   </category-def>
+</site>
