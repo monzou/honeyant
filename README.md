@@ -19,4 +19,4 @@ Select your Java Project and configure HoneyAnt page.
 
 ## Example
 
-See [Example](https://github.com/monzou/honeyant/honeyant-example).
+See [Example](https://github.com/monzou/honeyant/tree/master/honeyant-example).
