@@ -16,13 +16,6 @@ import org.apache.tools.ant.Task;
  */
 public class DumpTask extends Task {
 
-    public static void main(String[] args) {
-
-        File file = new File("foo");
-        System.err.println(file.getAbsolutePath());
-
-    }
-
     private String fqn;
 
     private String path;
@@ -53,12 +46,13 @@ public class DumpTask extends Task {
 
     private void dump(Object source) throws IOException {
 
-        File dir = new File("dest");
+        File dir = new File(getProject().getBaseDir(), "dest");
         if (!dir.exists()) {
             dir.mkdirs();
         }
 
         File file = new File(dir, "dump.txt");
+        log(String.format("dump to %s", file.getAbsolutePath()));
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
         try {
@@ -69,7 +63,7 @@ public class DumpTask extends Task {
             Field[] fs = source.getClass().getDeclaredFields();
             if (fs != null && fs.length > 0) {
                 for (Field f : fs) {
-                    writer.write(String.format("\t%s (%s)\n", f.getName(), f.getType()));
+                    writer.write(String.format("\t%s (%s)\n", f.getName(), f.getType().getName()));
                 }
             }
         } finally {

@@ -14,7 +14,7 @@
 		<echo message="HoneyAnt incremental build: ${clazz} (${path})" />
 		<dump fqn="${clazz}" path="${path}" />
 		<antcall target="refresh">
-			<param name="dir" value="." />
+			<param name="dir" value="/" />
 		</antcall>
 	</target>
 
