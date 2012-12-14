@@ -56,9 +56,10 @@ public class DumpTask extends Task {
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
         try {
-            writer.write(String.format("path=%s\n", path));
-            writer.write(String.format("class=%s\n", source.getClass().getName()));
-            writer.write(String.format("package=%s\n", source.getClass().getPackage().getName()));
+            writer.write(String.format("path : %s\n", path));
+            writer.write(String.format("class : %s\n", source.getClass().getName()));
+            writer.write(String.format("package : %s\n", source.getClass().getPackage().getName()));
+            writer.write("fields ->\n");
 
             Field[] fs = source.getClass().getDeclaredFields();
             if (fs != null && fs.length > 0) {
