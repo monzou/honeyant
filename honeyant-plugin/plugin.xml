@@ -3,21 +3,21 @@
 <plugin>
 
    <extension
-         id="monzou.honeyant.nature"
+         id="com.usopla.honeyant.nature"
          name="HoneyAnt Nature"
          point="org.eclipse.core.resources.natures">
       <runtime>
-         <run class="monzou.honeyant.HoneyAntNature" />
+         <run class="com.usopla.honeyant.HoneyAntNature" />
       </runtime>
       <requires-nature id="org.eclipse.jdt.core.javanature" />
    </extension>
    <extension
-         id="monzou.honeyant.preferences.propertyPage"
+         id="com.usopla.honeyant.preferences.propertyPage"
          name="HoneyAnt Property Page"
          point="org.eclipse.ui.propertyPages">
       <page
-            class="monzou.honeyant.preferences.view.HoneyAntPropertyPage"
-            id="monzou.honeyant.preferences.view.propertyPage"
+            class="com.usopla.honeyant.preferences.view.HoneyAntPropertyPage"
+            id="com.usopla.honeyant.preferences.view.propertyPage"
             name="HoneyAnt">
 	    <enabledWhen>
 	      <instanceof value="org.eclipse.jdt.core.IJavaProject" />
@@ -25,11 +25,11 @@
       </page>
    </extension>
    <extension
-         id="monzou.honeyant.builder"
+         id="com.usopla.honeyant.builder"
          name="HoneyAnt Runner"
          point="org.eclipse.core.resources.builders">
       <builder>
-         <run class="monzou.honeyant.HoneyAntRunner" />
+         <run class="com.usopla.honeyant.HoneyAntRunner" />
       </builder>
    </extension>
 

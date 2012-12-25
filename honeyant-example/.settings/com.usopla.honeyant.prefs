@@ -1,0 +1,8 @@
+com.usopla.honeyant.honeyant-example.buildFileName=honeyant.xml
+com.usopla.honeyant.honeyant-example.buildTarget=honeyant
+com.usopla.honeyant.honeyant-example.buildTriggerAnnotation=HoneyAnt
+com.usopla.honeyant.honeyant-example.cacheEnabled=true
+com.usopla.honeyant.honeyant-example.cacheFileDir=.honeyant
+com.usopla.honeyant.honeyant-example.incrementalBuildEnabled=true
+com.usopla.honeyant.honeyant-example.pluginEnabled=true
+eclipse.preferences.version=1

@@ -1,6 +1,6 @@
-package monzou.honeyant.example.source;
+package com.usopla.honeyant.example.source;
 
-import monzou.honeyant.example.annotation.HoneyAnt;
+import com.usopla.honeyant.example.annotation.HoneyAnt;
 
 /**
  * Person

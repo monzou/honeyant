@@ -1,4 +1,4 @@
-package monzou.honeyant;
+package com.usopla.honeyant;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -18,13 +18,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicReference;
 
-import monzou.honeyant.preferences.model.HoneyAntPreferences;
-import monzou.honeyant.support.Constants;
-import monzou.honeyant.support.Logger;
-import monzou.honeyant.support.LoggerFactory;
-import monzou.honeyant.support.PluginUtils;
-import monzou.honeyant.support.PreferenceModelFactory;
-import monzou.honeyant.support.Utils;
 
 import org.eclipse.ant.core.AntCorePlugin;
 import org.eclipse.ant.core.AntCorePreferences;
@@ -46,6 +39,14 @@ import org.eclipse.jdt.core.IAnnotation;
 import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaCore;
+
+import com.usopla.honeyant.preferences.model.HoneyAntPreferences;
+import com.usopla.honeyant.support.Constants;
+import com.usopla.honeyant.support.Logger;
+import com.usopla.honeyant.support.LoggerFactory;
+import com.usopla.honeyant.support.PluginUtils;
+import com.usopla.honeyant.support.PreferenceModelFactory;
+import com.usopla.honeyant.support.Utils;
 
 /**
  * HoneyAntRunner

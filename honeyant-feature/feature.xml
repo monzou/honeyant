@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="monzou.honeyant.feature"
+      id="com.usopla.honeyant.feature"
       label="HoneyAnt Feature"
       version="1.0.0.qualifier">
 
@@ -35,7 +35,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    </license>
 
    <plugin
-         id="monzou.honeyant"
+         id="com.usopla.honeyant"
          download-size="0"
          install-size="0"
          version="0.0.0"

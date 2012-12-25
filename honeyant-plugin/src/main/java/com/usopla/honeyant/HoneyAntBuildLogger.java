@@ -1,11 +1,8 @@
-package monzou.honeyant;
+package com.usopla.honeyant;
 
 import java.io.IOException;
 import java.io.PrintStream;
 
-import monzou.honeyant.support.Constants;
-import monzou.honeyant.support.Logger;
-import monzou.honeyant.support.LoggerFactory;
 
 import org.apache.tools.ant.DefaultLogger;
 import org.eclipse.ui.console.ConsolePlugin;
@@ -13,6 +10,10 @@ import org.eclipse.ui.console.IConsole;
 import org.eclipse.ui.console.IConsoleManager;
 import org.eclipse.ui.console.IOConsole;
 import org.eclipse.ui.console.IOConsoleOutputStream;
+
+import com.usopla.honeyant.support.Constants;
+import com.usopla.honeyant.support.Logger;
+import com.usopla.honeyant.support.LoggerFactory;
 
 /**
  * HoneyAntBuildLogger

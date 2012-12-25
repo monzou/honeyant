@@ -1,4 +1,4 @@
-package monzou.honeyant.example.annotation;
+package com.usopla.honeyant.example.annotation;
 
 /**
  * HoneyAnt marker annotation

@@ -1,13 +1,14 @@
-package monzou.honeyant;
+package com.usopla.honeyant;
 
-import monzou.honeyant.support.Constants;
-import monzou.honeyant.support.Logger;
-import monzou.honeyant.support.LoggerFactory;
-import monzou.honeyant.support.PluginUtils;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectNature;
 import org.eclipse.core.runtime.CoreException;
+
+import com.usopla.honeyant.support.Constants;
+import com.usopla.honeyant.support.Logger;
+import com.usopla.honeyant.support.LoggerFactory;
+import com.usopla.honeyant.support.PluginUtils;
 
 /**
  * HoneyAntNature

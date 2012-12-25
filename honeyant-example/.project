@@ -15,9 +15,15 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>com.usopla.honeyant.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>monzou.honeyant.nature</nature>
+		<nature>com.usopla.honeyant.nature</nature>
 	</natures>
 </projectDescription>

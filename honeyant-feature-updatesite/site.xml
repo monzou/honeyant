@@ -3,7 +3,7 @@
    <description name="HoneyAnt Eclipse Plugin Updatesite" url="https://github.com/monzou/honeyant/tree/master/honeyant-feature-updatesite">
       The updatesite of HoneyAnt Eclipse Plugin.
    </description>
-   <feature url="features/monzou.honeyant.feature_1.0.0.201212131614.jar" id="monzou.honeyant.feature" version="1.0.0.201212131614">
+   <feature url="features/com.usopla.honeyant.feature_1.0.0.201212260053.jar" id="com.usopla.honeyant.feature" version="1.0.0.201212260053">
       <category name="honeyant"/>
    </feature>
    <category-def name="honeyant" label="HoneyAnt">

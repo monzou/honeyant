@@ -8,7 +8,7 @@
 		</fileset>
 	</path>
 
-	<taskdef name="dump" classname="monzou.honeyant.example.task.DumpTask" classpathref="classpath" />
+	<taskdef name="dump" classname="com.usopla.honeyant.example.task.DumpTask" classpathref="classpath" />
 	
 	<target name="honeyant" description="HoneyAnt incremental build task example">
 		<echo message="HoneyAnt incremental build: ${clazz} (${path})" />

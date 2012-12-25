@@ -1,9 +1,10 @@
-package monzou.honeyant.support;
+package com.usopla.honeyant.support;
 
-import monzou.honeyant.HoneyAnt;
 
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
+
+import com.usopla.honeyant.HoneyAnt;
 
 /**
  * LoggerFactory

@@ -1,4 +1,4 @@
-package monzou.honeyant.preferences.model;
+package com.usopla.honeyant.preferences.model;
 
 /**
  * HoneyAntPreferences

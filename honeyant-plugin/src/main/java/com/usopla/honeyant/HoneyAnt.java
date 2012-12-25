@@ -1,4 +1,4 @@
-package monzou.honeyant;
+package com.usopla.honeyant;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
