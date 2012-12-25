@@ -5,13 +5,11 @@ HoneyAnt is an incremental [Ant](http://ant.apache.org/) build plugin for [Eclip
 
 ## Features
 
-When you save a Java file, HoneyAnt runs its build script automatically.
+When you save a Java file or build Java project, HoneyAnt runs its build script automatically.
+If cache is enabled, HoneyAnt runs its build script only when the source file is changed.
 
 This plugin provides similar functions to APT (Annotation Processing Tool), but HoneyAnt is more powerful and freely !
 You can run **any** Ant build script when you change the annotated Java file. File generation, testing, etc, etc ...
-
-If it is an incremental build (after file editing) and cache enabled, HoneyAnt runs its build script only when the source file is changed.
-However, if it is full build (project cleaning), HoneyAnt always runs its build script.  
 
 
 ## Install
@@ -19,9 +17,10 @@ However, if it is full build (project cleaning), HoneyAnt always runs its build 
 Currently HoneyAnt does not provide an update-site. Please install plugin from cloned git repository.
 
 1. git clone https://github.com/monzou/honeyant.git
-2. [ Help ] - [ Install New Software ] - [ Add ] - [ Local ] - [ {CLONE_REPO}/honeyant-feature-updatesite ]
-3. Restart Eclipse.
-3. Select your Java Project and configure HoneyAnt page.
+2. Run Eclipse
+3. Help - Install New Software - Add - Local - CLONED_REPO/honeyant-feature-updatesite
+4. Restart Eclipse
+5. Select your Java Project and configure HoneyAnt page
 
 
 ## Configuration
